@@ -1,0 +1,49 @@
+.footermenu-scroll-up {
+  margin-top: 80vh;
+}
+.footermenu-scroll-down {
+  margin-bottom: 90vh;
+}
+.footermenu-speed-dial {
+  position: absolute;
+  bottom: (8 * 3)px;
+  right: (8 * 5)px;
+}
+
+.footer-inline-block {
+  display: inline-block;
+  padding: 0px;
+  width: auto;
+}
+
+.footer-list {
+  margin-bottom: 0;
+  padding: 0;
+  margin-top: 0;
+  flex-direction: row;
+}
+
+.footer-block {
+  color: inherit;
+  padding: 0.9375rem;
+  font-weight: 550;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  text-decoration: none;
+  position: relative;
+  display: block;
+}
+
+.footer-icon {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  top: 3px;
+}
+
+.footer-white-font {
+  &,&:hover,&:focus {
+    color: white;
+  }
+}

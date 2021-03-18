@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Noto+Sans+KR:wght@100&family=Poor+Story&display=swap');
+
+// english U+0041-005A, U+0061-007A, U+0030-0039, U+0080-00FF
+// korean U+AC00-U+D7A3
+
+@font-face {
+  font-family: 'MaruBuri-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+AC00-U+D7A3;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-size: 1rem;
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#5ee7df), to(#b490ca));
+      background-image: -webkit-linear-gradient(bottom, #5ee7df 0%, #b490ca 100%);
+      background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  }
+
+  &::-webkit-scrollbar {
+      width: 6px;
+      background-color: transparent;
+  }
+}
+
+hr {
+  border: dotted #e0dede 10px;
+  border-bottom: none;
+  width: 20%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "poor story", serif;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+}
+h1,
+h2,
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h4,
+h5,
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h1 {
+  font-size: 3.3125rem;
+  line-height: 1.15em;
+}
+h2 {
+  font-size: 2.25rem;
+  line-height: 1.5em;
+}
+h3 {
+  font-size: 1.5625rem;
+  line-height: 1.4em;
+}
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.5em;
+}
+h5 {
+  font-size: 1.0625rem;
+  line-height: 1.55em;
+}
+h6 {
+  font-size: 0.85rem;
+  // text-transform: uppercase;
+  font-weight: 500;
+}
+p,
+a {
+  font-size: 16px;
+  margin: 0 0 10px;
+  letter-spacing: 0.03em;
+
+  line-height: 1.45;
+  vertical-align: baseline;
+}
+html {
+  box-sizing: border-box;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-family: "poor story", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #e5e5e5;
+  color: $black-color;
+  margin: 0;
+  font-size: 1rem;
+  text-align: left;
+  ::selection {
+    background-color: #FDE2E4;
+  }
+  ::-moz-selection {
+    background-color: #FDE2E4;
+  }
+}
+
+legend {
+  border-bottom: 0;
+}
+
+// Prevent highlight on mobile
+* {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  &:focus {
+    outline: 0;
+  }
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    color: darken($link-color, 5%);
+    text-decoration: none;
+  }
+}
+
+label {
+  font-size: 14px;
+  line-height: 1.42857;
+  color: $checkboxes-text-color;
+  font-weight: 400;
+}
+small {
+  font-size: 75%;
+  color: #777;
+  font-weight: 400;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+form {
+  margin-bottom: 1.125rem;
+}

@@ -1,0 +1,37 @@
+.parallax {
+  height: 90vh;
+  overflow: hidden;
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: flex;
+  align-items: center;
+}
+
+.filter {
+  &:before {
+    background: linear-gradient(60deg, rgba(255, 142, 83, 0.3) 30%,rgba(163, 216, 244, 0.5) 80%);
+  }
+  &:after, &:before {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+  }
+}
+
+.parallaxbackground {
+  background-size: cover;
+  background-position: center;
+}
+
+.brand {
+  color: #FFFFFF;
+  text-align: left;
+}

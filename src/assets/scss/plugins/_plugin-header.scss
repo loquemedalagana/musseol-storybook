@@ -1,0 +1,105 @@
+.header-list {
+  font-family: "Comfortaa Jua";
+  font-weight: 300;
+  line-height: 1.5em;
+  font-size: 14px;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: inherit;
+  justify-content: space-between;
+}
+
+.header-list-item {
+  float: left;
+  color: inherit;
+  position: relative;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  @media (max-width: 600px) {
+    width: 100%;
+    &:after {
+      width: calc(100% - 30px);
+      content: "";
+      display: block;
+      height: 1px;
+      margin-left: 15px;
+      background-color: #e5e5e5;
+    }
+  }
+}
+
+.header-nav-link {
+  color: inherit;
+  position: relative;
+  padding: 0.9375rem;
+  font-weight: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  line-height: 20px;
+  text-decoration: none;
+  margin: 0px;
+  display: inline-flex;
+  &:hover, &:focus {
+    color: inherit;
+    background: rgba(200, 200, 200, 0.2);
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+    &:after {
+      width: calc(100% - 30px);
+      margin-left: 15px;
+      margin-bottom: 8px;
+      margin-top: 8px;
+      text-align: left;
+      & > span:first-child {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+.header-container {
+  min-height: 50px;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.header-flex {
+  flex: 1;
+}
+
+.drawer-root {
+  background: rgba(148, 181, 192, 0.2);
+}
+
+.drawer-paper {
+  text-align: left;
+  background: linear-gradient(135deg, rgba(250, 243, 224, 0.9) 60%, rgba(246, 245, 245, 1)) !important;
+  width: 260px;
+  border: none;
+  bottom: 0;
+  transition-property: top, bottom, width;
+  transition-duration: .2s, .2s, .35s;
+  transition-timing-function: linear, linear, ease;
+  box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+
+  position: fixed;
+  display: block;
+  top: 0;
+  height: 100vh;
+  right: 0;
+  left: auto;
+  visibility: visible;
+  overflow-y: visible;
+  border-top: none;
+
+  padding-right: 0px;
+  padding-left: 0;
+}

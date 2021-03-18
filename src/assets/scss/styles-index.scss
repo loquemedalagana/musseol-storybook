@@ -1,0 +1,36 @@
+@import "core/variables";
+@import "core/mixins";
+
+// Core Components
+@import "core/misc";
+
+// Core Plugins
+
+// @import "plugins/plugin-datetime-picker";
+@import "plugins/plugin-loading";
+@import "plugins/plugin-modal";
+@import "plugins/plugin-button";
+@import "plugins/plugin-tooltip";
+@import "plugins/plugin-footer";
+@import "plugins/plugin-container";
+
+@import "plugins/plugin-parallax";
+@import "plugins/plugin-header";
+@import "plugins/plugin-nouislider";
+@import "plugins/plugin-react-datetime";
+@import "plugins/plugin-react-slick";
+@import "plugins/plugin-scrollbar";
+
+@import "plugins/plugin-typography";
+@import "plugins/plugin-card";
+@import "plugins/plugin-radiocheckbox";
+
+@import "plugins/plugin-navpills";
+@import "plugins/plugin-responsive";
+@import "plugins/plugin-ripples";
+@import "plugins/plugin-wizardcard";
+@import "plugins/plugin-animation";
+@import "plugins/plugin-input";
+@import "plugins/plugin-media";
+@import "plugins/plugin-dropdown";
+@import "plugins/plugin-alerts";

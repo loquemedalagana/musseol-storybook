@@ -1,0 +1,11 @@
+$mdb-card-body-text: $mdb-text-color-primary !default;
+$mdb-card-body-background: #fff !default;
+
+.card{
+  background-color: #FFFFFF;
+  padding: 10px 0;
+  width: 100%;
+  border-radius: $border-radius-large;
+  color: $mdb-card-body-text;
+  background: $mdb-card-body-background;
+}
