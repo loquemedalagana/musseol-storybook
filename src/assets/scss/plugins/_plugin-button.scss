@@ -61,14 +61,16 @@
 }
 
 .button-transparent {
-  transition: background-color 0.2s linear, color 0.2s linear;
-  color: whitesmoke;
-  background-color: Transparent;
   background-repeat:no-repeat;
   border: none;
   cursor:pointer;
   overflow: hidden;
   outline:none;
+
+  transition: background-color 0.2s linear, color 0.2s linear;
+  color: whitesmoke;
+  background-color: Transparent;
+
   text-decoration: none;
   &,&:focus,&:hover,&:visited {
     background: transparent;
@@ -78,6 +80,7 @@
 
 // primary button rgba(94, 100, 114, 1)
 .button-primary {
+  color: whitesmoke;
   transition: background-color 0.2s linear, color 0.2s linear;
   background-color: rgb(98,124,208);
   box-shadow: 0 2px 2px 0 rgba(94, 100, 114, 0.14), 0 3px 1px -2px rgba(94, 100, 114, 0.2), 0 1px 5px 0 rgba(94, 100, 114, 0.12);
@@ -112,6 +115,7 @@
 
 // success button
 .button-success {
+  color: whitesmoke;
   background-color: #799351;
   box-shadow: 0 2px 2px 0 rgba(76, 175, 80, 0.14), 0 3px 1px -2px rgba(76, 175, 80, 0.2), 0 1px 5px 0 rgba(76, 175, 80, 0.12);
   &:hover,&:focus {
@@ -132,7 +136,8 @@
 
 // danger button
 .button-danger {
-  background-color: #e40017;
+  color: whitesmoke;
+  background-color: #ef4f4f;
   box-shadow: 0 2px 2px 0 rgba(244, 67, 54, 0.14), 0 3px 1px -2px rgba(244, 67, 54, 0.2), 0 1px 5px 0 rgba(244, 67, 54, 0.12);
   &:hover,&:focus {
     background-color: #e45826;
@@ -154,7 +159,7 @@
 .button-white {
   &,&:focus,&:hover,&:visited {
     background-color: #FFFFFF;
-    color: gray;
+    color: #dddddd;
   }
 }
 
