@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import Parallax from "./Parallax";
 import MediumParallaxBrand from "./MediumParallaxBrand";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 import upperBackgroundImg from "../../assets/images/background3.jpg";
 
 
@@ -23,10 +24,11 @@ const smallParallaxStyle = (imgURL?: string | undefined) => ({
 export interface IProps {
   children?: React.ReactNode;
   isSmall?: boolean;
+  isWhite?: boolean;
 }
 
 const LayoutWrapper: React.FC<IProps> = (props) => {
-  const {children, isSmall} = props;
+  const {children, isSmall, isWhite} = props;
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
 
   return (
@@ -56,6 +58,7 @@ const LayoutWrapper: React.FC<IProps> = (props) => {
         {children}
       </div>
       {/* footer */}
+      <Footer whiteFont={isWhite} />
     </>
   )
 }
