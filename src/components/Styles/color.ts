@@ -7,7 +7,7 @@ export const blue = {
 };
 
 export const green = {
-  100: "#529e66",
+  100: "#799351",
   200: "#367b48",
   300: "#276738"
 };
@@ -20,7 +20,7 @@ export const yellow = {
 
 export const red = {
   100: "#d0454c",
-  200: "#b54248",
+  200: "#ef4f4f",
   300: "#95353a"
 };
 
