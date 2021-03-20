@@ -22,10 +22,11 @@ const Container = styled.div`
   }
 `;
 
+// onclose and children are required in the real project
 export interface IProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   modalHeader?: React.ReactNode;
-  onClose: React.MouseEventHandler<HTMLButtonElement>;
+  onClose?: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 const ModalWrapper: React.FC<IProps> = ({ children, onClose }) => {

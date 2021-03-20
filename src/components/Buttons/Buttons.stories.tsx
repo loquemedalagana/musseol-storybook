@@ -30,16 +30,23 @@ Secondary.args = {
   children: "outlined button",
 };
 
+export const Tertiary = Template.bind({});
+Tertiary.args = {
+  className: "example-button-typography",
+  color: "simple",
+  children: "simple button",
+};
+
 export const Success = Template.bind({});
 Success.args = {
   className: "example-button-typography",
   color: "success",
-  children: "primary button",
+  children: "success button",
 };
 
 export const Danger = Template.bind({});
 Danger.args = {
   className: "example-button-typography",
   color: "danger",
-  children: "primary button",
+  children: "danger button",
 };

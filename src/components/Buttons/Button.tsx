@@ -1,11 +1,10 @@
 import React, { LegacyRef, PropsWithChildren, forwardRef } from "react";
 
 export interface IProps {
-  color?: "primary" | "warning" | "danger" | "success" | "info" | "rose" | "gray" | "transparent" | "white" | "outlined";
+  color?: "primary" | "warning" | "danger" | "success" | "info" | "rose" | "gray" | "transparent" | "white" | "outlined" | "simple";
   size?: "sm" | "lg";
   href?: string;
   target?: "_blank" | "_self" | "_parent" | "_top" | string;
-  simple?: boolean;
   round?: boolean;
   fullWidth?: boolean;
   disabled?: boolean;
@@ -29,7 +28,6 @@ const RegularButton = forwardRef((props:PropsWithChildren<IProps>, ref: LegacyRe
     children,
     fullWidth,
     disabled,
-    simple,
     size,
     block,
     link,
@@ -39,7 +37,7 @@ const RegularButton = forwardRef((props:PropsWithChildren<IProps>, ref: LegacyRe
   } = props;
 
   return (
-    <button type="button" {...rest} ref={ref} className={`button ${className} button-${color} ${justIcon ? "button-just-icon" : ""}`}>
+    <button type="button" {...rest} ref={ref} className={`button ${className} button-${color} button-${size} ${justIcon ? "button-just-icon" : ""}`}>
       {children}
     </button>
   );
