@@ -50,7 +50,7 @@ const BrandItem = styled.button`
   }
 `;
 
-interface IProps {
+export interface IProps {
   mobileOpen: boolean;
   setMobileOpen: React.Dispatch<React.SetStateAction<boolean>>;
   color: HeaderColor;

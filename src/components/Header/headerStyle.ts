@@ -11,7 +11,7 @@ import {
   transition,
   boxShadow,
   drawerWidth,
-} from "../material-kit-react.js";
+} from "../Styles/common";
 
 const headerStyle = createStyles({
   appBar: {
@@ -104,7 +104,7 @@ const headerStyle = createStyles({
     backgroundColor: roseColor,
     color: "#FFFFFF",
     boxShadow:
-      "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(233, 30, 99, 0.46)",
+      "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(216,187,255, 0.46)",
   },
   transparent: {
     backgroundColor: "transparent !important",
