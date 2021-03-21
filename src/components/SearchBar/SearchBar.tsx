@@ -18,6 +18,7 @@ const SearchBarWrapper = styled.div`
   pointer-events: none;
 `;
 
+// modal-content
 const SearchBarContainer = styled.div`
   border: 0;
   position: relative;
@@ -35,6 +36,7 @@ const SearchBarContainer = styled.div`
   }
 `;
 
+// modal-header
 const SearchBarInputWrapper = styled.div`
   padding: 24px;
   border-bottom: none;
@@ -45,19 +47,18 @@ const SearchBarInputWrapper = styled.div`
 
   border-top-left-radius: calc(.2857rem - 1px);
   border-top-right-radius: calc(.2857rem - 1px);
+
+  & > h5 {
+    font-weight: 400;
+    font-size: .8125rem;
+    margin-top: 0;
+  }
 `;
 
 // if korean, if english?
 const SearchBarInputH5 = styled.h5`
-  margin-top: 0;
   margin-bottom: 0;
-  margin-block-start: 1.67em;
-  margin-block-end: 1.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  line-height: 1.1;
-  font-weight: 400;
-  font-size: .8125rem;
+  line-height: 1.1 !important;
 `;
 
 const SearchBarInput = styled.input`
