@@ -1,11 +1,13 @@
 /*eslint-disable*/
-import React, { useCallback } from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import classNames from "classnames";
 import styled from "@emotion/styled";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   AppBar, Toolbar, IconButton, Hidden, Drawer,
 } from "@material-ui/core";
+import useModal from "../../hooks/useModal";
+import SearchBar from "../SearchBar/SearchBar";
 
 // @material-ui/icons
 import {
@@ -71,6 +73,7 @@ export interface IProps {
 const Header: React.FC<IProps> = (props) => {
   const classes = useStyles();
   const { mobileOpen, setMobileOpen } = props;
+  const [searchModal, setSearchModal] = useState(false);
 
   React.useEffect(() => {
     if (props.changeColorOnScroll) {
@@ -117,6 +120,20 @@ const Header: React.FC<IProps> = (props) => {
   });
 
   // console.log(location);
+  // only for client side
+  useEffect(() => {
+    const $body = document.querySelector('body');
+    const $modalRoot = document.createElement("div");
+    $modalRoot.id = "#root-modal";
+    if($body !== null) {
+      $body.appendChild($modalRoot);
+    }
+  }, []);
+  const {
+    openModal: showSearchModal,
+    closeModal: closeSearchModal,
+    ModalPortal: SearchModalPortal,
+  } = useModal();
 
 
   const brandComponent = (
@@ -151,7 +168,7 @@ const Header: React.FC<IProps> = (props) => {
               brandComponent
             )}
           </div>
-          {!isSearchPage && <SearchIcon color="inherit" onClick={() => alert("search")} />}
+          {!isSearchPage && <SearchIcon color="inherit" onClick={showSearchModal} />}
           <Hidden smDown implementation="css">
             {rightLinks}
           </Hidden>
@@ -183,6 +200,9 @@ const Header: React.FC<IProps> = (props) => {
           </Drawer>
         </Hidden>
       </AppBar>
+      <SearchModalPortal>
+        <SearchBar onClose={closeSearchModal} />
+      </SearchModalPortal>
     </>
   );
 }

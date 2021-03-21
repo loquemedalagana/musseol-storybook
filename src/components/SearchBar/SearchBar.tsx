@@ -4,7 +4,7 @@ import CloseIcon from '@material-ui/icons/Close';
 
 export interface IProps {
   // onClick search event
-  // onClose?: React.MouseEventHandler<HTMLButtonElement>;
+  onClose: React.MouseEventHandler<HTMLButtonElement>;
 }
 
 const SearchBarWrapper = styled.div`
@@ -78,6 +78,7 @@ const SearchBarInput = styled.input`
 `;
 
 const CloseIconWrapper = styled.button`
+  border-radius: 50%;
   color: #555;
   top: 30px!important;
   text-shadow: none;
@@ -100,18 +101,21 @@ const CloseIconWrapper = styled.button`
   
   -webkit-appearance: button;
   text-transform: none;
-  border-radius: 0;
   overflow: visible;
+  
+  &:hover,&:focus {
+    background: rgba(211, 224, 234, 0.5);
+  }
 `;
 
-const SearchBar = () => {
+const SearchBar: React.FC<IProps> = ({onClose}) => {
   return (
     <SearchBarWrapper role="document">
       <SearchBarContainer>
         <SearchBarInputWrapper>
           <SearchBarInputH5>
             <SearchBarInput placeholder="SEARCH" type="text" />
-            <CloseIconWrapper>
+            <CloseIconWrapper onClick={onClose}>
               <CloseIcon />
             </CloseIconWrapper>
           </SearchBarInputH5>
