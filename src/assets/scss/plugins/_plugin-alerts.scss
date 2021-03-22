@@ -1,15 +1,11 @@
-.alert-dismissible {
-  padding-right: 1.25rem;
+.alert-info {
+  background-color: #627CD0;
 }
 
-.alert {
-
+.alert-success {
+  background-color: #799351;
 }
 
-.alert {
-  border: 0;
-  position: relative;
-  padding: .9rem 1.25rem;
-  margin-bottom: 1rem;
-  border-radius: .2857rem;
+.alert-danger {
+  background-color: #ef4f4f;
 }
