@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import CloseIcon from '@material-ui/icons/Close';
+import CloseIconWrapper from "../IconButtons/CloseIconWrapper";
 
 export interface IProps {
   // onClick search event
@@ -75,37 +76,6 @@ const SearchBarInput = styled.input`
   
   overflow: visible;
   transition: color .3s ease-in-out,border-color .3s ease-in-out,background-color .3s ease-in-out;
-`;
-
-const CloseIconWrapper = styled.button`
-  border-radius: 50%;
-  color: #555;
-  top: 30px!important;
-  text-shadow: none;
-  position: absolute;
-  right: 27px;
-  padding: 1rem;
-  margin: -1rem -1rem -1rem auto;
-  background-color: initial;
-  border: 0;
-  
-  &:not(:disabled) {
-    cursor: pointer;
-  }
-  
-  float: right;
-  font-size: 1.3125rem;
-  font-weight: 600;
-  line-height: 1;
-  opacity: .5;
-  
-  -webkit-appearance: button;
-  text-transform: none;
-  overflow: visible;
-  
-  &:hover,&:focus {
-    background: rgba(211, 224, 234, 0.5);
-  }
 `;
 
 const SearchBar: React.FC<IProps> = ({onClose}) => {
