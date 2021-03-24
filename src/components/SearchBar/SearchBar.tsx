@@ -73,18 +73,20 @@ const SearchBarInput = styled.input`
   background-clip: padding-box;
   box-shadow: none;
   color: #222a42;
-  
+
+  font-size: 17px;
+  font-weight: 100;
   overflow: visible;
   transition: color .3s ease-in-out,border-color .3s ease-in-out,background-color .3s ease-in-out;
 `;
 
 const SearchBar: React.FC<IProps> = ({onClose}) => {
   return (
-    <SearchBarWrapper role="document">
+    <SearchBarWrapper role="document" className="slide-in-top">
       <SearchBarContainer>
         <SearchBarInputWrapper>
           <SearchBarInputH5>
-            <SearchBarInput placeholder="SEARCH" type="text" />
+            <SearchBarInput className="input-typography" placeholder="SEARCH" type="text" />
             <CloseIconWrapper onClick={onClose}>
               <CloseIcon />
             </CloseIconWrapper>

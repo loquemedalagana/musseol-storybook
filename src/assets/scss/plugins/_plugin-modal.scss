@@ -44,8 +44,8 @@
   line-height: 1;
   float: right;
 
-  &:hover {
-    color: #e9b0df;
+  &:hover,&:focus {
+    color: #aabad2;
   }
 }
 .modal-close {

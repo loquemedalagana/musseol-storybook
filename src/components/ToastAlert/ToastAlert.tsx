@@ -19,7 +19,7 @@ const AlertWrapper = styled.div`
 const ToastAlert: React.FC<IProps> = (props) => {
   const {type, message} = props;
   return (
-    <AlertWrapper className={`alert-${type} alert-typography`}>
+    <AlertWrapper className={`alert-${type} alert-typography grow-up`}>
       <span>
         {message}
       </span>
