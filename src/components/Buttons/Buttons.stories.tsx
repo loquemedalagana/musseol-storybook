@@ -20,7 +20,7 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 // primary button
 export const Primary = Template.bind({});
 Primary.args = {
-  className: "example-button-typography",
+  className: "button-typography",
   color: "primary",
   children: "primary button",
 };
@@ -28,28 +28,28 @@ Primary.args = {
 // secondary button (outlined)
 export const Secondary = Template.bind({});
 Secondary.args = {
-  className: "example-button-typography",
+  className: "button-typography",
   color: "outlined",
   children: "outlined button",
 };
 
 export const Tertiary = Template.bind({});
 Tertiary.args = {
-  className: "example-button-typography",
+  className: "button-typography",
   color: "simple",
   children: "simple button",
 };
 
 export const Success = Template.bind({});
 Success.args = {
-  className: "example-button-typography",
+  className: "button-typography",
   color: "success",
   children: "success button",
 };
 
 export const Danger = Template.bind({});
 Danger.args = {
-  className: "example-button-typography",
+  className: "button-typography",
   color: "danger",
   children: "danger button",
 };
