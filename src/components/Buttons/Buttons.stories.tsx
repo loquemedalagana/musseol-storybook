@@ -10,6 +10,9 @@ export default {
   argTypes: {
     backgroundColor: { control: 'color' },
   },
+  parameters: {
+    layout: "centered",
+  }
 } as Meta;
 
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;

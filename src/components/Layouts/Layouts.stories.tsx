@@ -7,6 +7,9 @@ import LayoutWrapper, {IProps as LayoutProps} from "./LayoutWrapper";
 export default {
   title: 'Musiclab/PageLayout',
   component: LayoutWrapper,
+  parameters: {
+    layout: "fullscreen",
+  }
 } as Meta;
 
 const Templete: Story<LayoutProps> = (args) => <LayoutWrapper {...args} />

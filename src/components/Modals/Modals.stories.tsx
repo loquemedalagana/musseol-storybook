@@ -7,6 +7,9 @@ import ModalWrapper, {IProps as ModalProps} from "./ModalWrapper";
 export default {
   title: 'Musiclab/Modal',
   component: ModalWrapper,
+  parameters: {
+    layout: "centered",
+  }
 } as Meta;
 
 const Template: Story<ModalProps> = (args) => <ModalWrapper {...args} />

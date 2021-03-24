@@ -6,6 +6,9 @@ import { BottomLoaderElement } from "./Loaders";
 export default {
   title: "Musiclab/Loader",
   component: LoaderLayout,
+  parameters: {
+    layout: "centered",
+  }
 } as Meta;
 
 const Templete: Story<LoaderProps> = (args) => <LoaderLayout {...args} />;
